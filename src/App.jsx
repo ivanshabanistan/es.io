@@ -9,13 +9,13 @@ import Contacts from "./pages/Contacts";
 function App() {
   return (
     <BrowserRouter>
+      <Layout />
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="approach" element={<Approach />} />
-          <Route path="contacts" element={<Contacts />} />
-        </Route>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="approach" element={<Approach />} />
+        <Route path="contacts" element={<Contacts />} />
+
         <Route path="*" element={<div>Page not found </div>} />
       </Routes>
     </BrowserRouter>

@@ -16,8 +16,8 @@ body {
   box-sizing: border-box;
 }
 
-ul[class],
-ol[class] {
+ul,
+li {
   padding: 0;
 }
 

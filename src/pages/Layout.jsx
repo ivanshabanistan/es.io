@@ -1,23 +1,43 @@
-import { Link, Outlet } from "react-router-dom";
-
+import { NavLink, Outlet } from "react-router-dom";
+import "../App.css";
+import Email from "../components/email/Email";
 const Layout = () => {
+  const activeLink = "nav__link nav__link--active";
+  const normalLink = "nav__link";
   return (
-    <>
+    <div className="header">
+      <NavLink to={"/"} className="header__logo"></NavLink>
       <nav>
-        <ul>
-          <li>
-            <Link to="/about">About</Link>
+        <ul className="nav">
+          <li className="nav__item">
+            <NavLink
+              to={"/about"}
+              className={({ isActive }) => (isActive ? activeLink : normalLink)}
+            >
+              About
+            </NavLink>
           </li>
-          <li>
-            <Link to="/approach">Approach</Link>
+          <li className="nav__item">
+            <NavLink
+              to={"/approach"}
+              className={({ isActive }) => (isActive ? activeLink : normalLink)}
+            >
+              Approach
+            </NavLink>
           </li>
-          <li>
-            <Link to="/contacts">Contacts</Link>
+          <li className="nav__item">
+            <NavLink
+              to={"/contacts"}
+              className={({ isActive }) => (isActive ? activeLink : normalLink)}
+            >
+              Contacts
+            </NavLink>
           </li>
         </ul>
       </nav>
+      <Email />
       <Outlet />
-    </>
+    </div>
   );
 };
 
