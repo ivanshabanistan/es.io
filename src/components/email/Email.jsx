@@ -1,5 +1,5 @@
 import copyImage from "../../assets/images/copyEmail.svg";
-import burgerImage from "../../assets/images/burgerMenu.svg";
+// import burgerImage from "../../assets/images/burgerMenu.svg";
 const Email = () => {
   function copyClipboard() {
     const text = "sokolovski.ea@gmail.com";
@@ -17,9 +17,9 @@ const Email = () => {
       <span className="email__copied">copied</span>
 
       <button className="email__btn">Email</button>
-      <div className="burger">
+      {/* <div className="burger">
         <img src={burgerImage} alt="burger menu" className="burger-line" />
-      </div>
+      </div> */}
     </div>
   );
 };
