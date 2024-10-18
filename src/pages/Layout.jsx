@@ -1,6 +1,7 @@
 import { NavLink, Outlet } from "react-router-dom";
 import "../App.css";
 import Email from "../components/email/Email";
+
 const Layout = () => {
   const activeLink = "nav__link nav__link--active";
   const normalLink = "nav__link";
@@ -36,6 +37,7 @@ const Layout = () => {
         </ul>
       </nav>
       <Email />
+
       <Outlet />
     </div>
   );
