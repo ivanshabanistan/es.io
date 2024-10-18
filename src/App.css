@@ -41,7 +41,6 @@ nav {
   align-items: center;
 }
 .nav__link--active {
-  /* height: 100%; */
   border-bottom: 2px solid #000000;
 }
 .email {
@@ -98,7 +97,6 @@ nav {
     display: none;
   }
   .email {
-    /* justify-content: end; */
     width: 86px;
   }
 }
@@ -141,7 +139,6 @@ nav {
 }
 
 .burger-icon.open .bar:nth-child(3) {
-  /* transform: rotate(-45deg) translate(5px, -5px); */
   transform: rotate(-45deg) translate(1px, -1px);
 }
 

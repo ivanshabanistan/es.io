@@ -22,9 +22,6 @@ const BurgerMenu = () => {
       </div>
       <nav className={`menu ${isOpen ? "open" : ""}`}>
         <ul>
-          {/* <li>
-          <a href="#home">Home</a>
-        </li> */}
           <li>
             <NavLink to={"/about"} onClick={handleLinkClick}>
               About
